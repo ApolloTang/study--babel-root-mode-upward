@@ -1,0 +1,14 @@
+{
+  "name": "@myscope/ui--b",
+  "version": "0.1.0",
+  "main": "lib/index.js",
+  "module": "src/index.js",
+  "license": "MIT",
+  "peerDependencies": {
+  },
+  "scripts": {
+    "build:clean": "rimraf ./lib"
+  },
+  "dependencies": {
+  }
+}
