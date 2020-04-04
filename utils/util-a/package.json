@@ -1,0 +1,12 @@
+{
+  "name": "@myscope/util--a",
+  "version": "0.1.0",
+  "main": "lib/index.js",
+  "module": "src/index.ts",
+  "license": "MIT",
+  "peerDependencies": {},
+  "scripts": {
+    "build:clean": "rimraf ./lib"
+  },
+  "dependencies": {}
+}
