@@ -1,3 +1,6 @@
+const packageUtilA = () => {
+  return 'util-a'
+}
 
-console.log('util-a works')
+export default packageUtilA;
 

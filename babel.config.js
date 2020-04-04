@@ -15,7 +15,6 @@ module.exports = api => {
       {
         debug: false,
         targets: { ie: '11' },
-        useBuiltIns: 'usage',
         modules: isTest ? 'commonjs' : false,
       },
     ]

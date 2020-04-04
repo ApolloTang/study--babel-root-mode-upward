@@ -13,13 +13,8 @@
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.8.6",
-    "@babel/plugin-proposal-class-properties": "^7.8.3",
     "@babel/preset-env": "^7.8.6",
-    "@babel/preset-react": "^7.8.3",
-    "@storybook/react": "^5.3.14",
     "babel-core": "7.0.0-bridge.0",
-    "babel-loader": "^8.0.6",
-    "fetch-mock": "^9.0.0-beta.2",
     "lerna": "^3.20.2"
   },
   "dependencies": {
@@ -31,6 +26,6 @@
     "build:ui": "lerna    --scope=@myscope/ui--*   exec --parallel -- babel --root-mode upward src -x .ts,.tsx,.js -d ./lib --ignore **/*.test.ts,**/*.test.js,**/*.test.tsx,**/*.stories.js,**/*.stories.ts,**/*.stories.tsx",
     "build:utils": "lerna --scope=@myscope/util--* exec --parallel -- babel --root-mode upward src -x .ts,.js      -d ./lib --ignore **/*.test.ts,**/*.test.js",
     "build:cleanAll": "lerna run --scope=@myscope/* --parallel build:clean",
-    "build:libs": "run-s build:cleanAll build:ui build:utils"
+    "build:libs": "yarn build:cleanAll && yarn build:ui && yarn build:utils"
   }
 }

@@ -12,7 +12,6 @@ module.exports = api => {
       {
         debug: false,
         targets: { node: 'current' },
-        useBuiltIns: 'usage',
         modules: 'commonjs',
       },
     ]
